@@ -37,46 +37,46 @@ def inject_css() -> None:
     st.markdown(
         """
         <style>
-        .devotional-corner {
+        ..devotional-corner {
     position: fixed;
+    top: 18px;
     right: 18px;
-    bottom: 18px;
     z-index: 99999;
-    width: 300px;
-    padding: 0.95rem 1rem;
-    border-radius: 18px;
+    width: 220px;
+    padding: 0.55rem 0.7rem;
+    border-radius: 14px;
     background: linear-gradient(
         135deg,
-        rgba(124, 58, 237, 0.28),
-        rgba(34, 211, 238, 0.18),
+        rgba(124, 58, 237, 0.30),
+        rgba(34, 211, 238, 0.20),
         rgba(244, 114, 182, 0.18)
     );
     border: 1px solid rgba(255, 255, 255, 0.14);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.30);
     backdrop-filter: blur(10px);
 }
 
 .devotional-corner .label {
-    font-size: 0.72rem;
+    font-size: 0.58rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: #f5d0fe;
     font-weight: 700;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
 }
 
 .devotional-corner .name {
-    font-size: 0.92rem;
+    font-size: 0.78rem;
     font-weight: 700;
     color: #ffffff;
-    line-height: 1.35;
+    line-height: 1.25;
 }
 
 .devotional-corner .sub {
-    font-size: 0.8rem;
+    font-size: 0.66rem;
     color: #e0f2fe;
-    line-height: 1.3;
-    margin-top: 0.15rem;
+    line-height: 1.2;
+    margin-top: 0.1rem;
 }
         .stApp {
             background: linear-gradient(180deg, #0d1117 0%, #0a0e14 100%);
