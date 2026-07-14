@@ -234,10 +234,10 @@ B.Tech (Computer Science & Engineering)
 AI Engineer | Python Developer | LangChain | Agentic AI | Machine Learning
 
 GitHub:
-https://github.com/yourusername
+https://github.com/Manish2232
 
 LinkedIn:
-https://linkedin.com/in/yourprofile
+https://www.linkedin.com/in/manish-kumar-bgp555/
 
 ---
 
