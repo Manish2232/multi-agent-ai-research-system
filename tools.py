@@ -2,19 +2,12 @@ from langchain.tools import tool
 import requests
 from bs4 import BeautifulSoup
 from tavily import TavilyClient
-
 import os
-import streamlit as st
 from dotenv import load_dotenv
-
+from rich import print
 load_dotenv()
 
-TAVILY_API_KEY = st.secrets.get(
-    "TAVILY_API_KEY",
-    os.getenv("TAVILY_API_KEY")
-)
-
-tavily = TavilyClient(api_key=TAVILY_API_KEY)
+tavily =  TavilyClient(api_key = os.getenv("TAVILY_API_KEY"))
 
 @tool
 def web_search(query: str):
