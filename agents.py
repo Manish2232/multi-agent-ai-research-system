@@ -1,16 +1,25 @@
-#create agent
 from langchain.agents import create_agent
 from langchain_mistralai import ChatMistralAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from tools import web_search, scrape_url
+
 import os
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
 
-#model setup
-llm = ChatMistralAI(model = "mistral-large-latest", temperature = 0)
+MISTRAL_API_KEY = st.secrets.get(
+    "MISTRAL_API_KEY",
+    os.getenv("MISTRAL_API_KEY")
+)
+
+llm = ChatMistralAI(
+    api_key=MISTRAL_API_KEY,
+    model="mistral-large-latest",
+    temperature=0
+)
 
 # 1st agent(search agent)
 def build_search_agent():
