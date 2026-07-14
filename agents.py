@@ -17,7 +17,7 @@ MISTRAL_API_KEY = st.secrets.get(
 
 llm = ChatMistralAI(
     api_key=MISTRAL_API_KEY,
-    model="mistral-large-latest",
+    model="mistral-small-latest",
     temperature=0
 )
 
